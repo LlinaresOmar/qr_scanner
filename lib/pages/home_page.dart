@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:qr_scanner/pages/address_page.dart';
 import 'package:qr_scanner/pages/maps_page.dart';
+import 'package:qr_scanner/providers/db_provider.dart';
 import 'package:qr_scanner/providers/ui_provider.dart';
 import 'package:qr_scanner/widgets/custom_navigatorbar.dart';
 import 'package:qr_scanner/widgets/scan_button.dart';
@@ -9,6 +10,7 @@ import 'package:qr_scanner/widgets/scan_button.dart';
 class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    DBProvider.db.database;
     return Scaffold(
       appBar: AppBar(
         elevation: 0,
